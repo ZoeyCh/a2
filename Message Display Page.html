@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Message Display Page</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+	<div class="content">
+    	<div class="Display">
+            <h2>Message Display Page</h2>
+            <div class="login">
+                <h4>Welcome, XXX!</h4>
+                <img src=""/>
+            </div>
+            <div class="logout">
+                <input type="submit" value="logout" name="logout"/>
+            </div>
+        </div>
+        <div class="Display_article">
+            <h3>title:</h3>
+            <h3>creator:</h3>
+            <div class="img"><img src=""/></div>
+            <div class="Display_con">
+        		<p>This page will show the details for a specific message. Eventually the data will be loaded dynamically from the database depending on which message was accessed from the message list page. For now, you can link this from the message list page statically. </p>
+                <p>The page should show the handle and avatar of the author of the message, and the body of the message. </p>
+                <p>There should also be a view log that shows the handle and avatar of the five most recent users who have viewed the message (most recent first), along with the date/time this occurred. As with the other pages in this assignment, you can load this with placeholder data for now. It will eventually be drawn from the database. </p>
+        	</div>
+        </div>
+        <div class="Display_news">
+            <h2>Latest view message user list</h2>
+            <div class="Display_news_con">
+                <table>
+                    <tr>
+                        <th colspan="4">User list</th>
+                     </tr>
+                     <tr>
+                        <td>(Image)</td>
+                        <td>Username</td>
+                        <td>Date</td>
+                        <td>Time</td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+	</div>
+
+</body>
+</html>
