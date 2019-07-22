@@ -1,0 +1,18 @@
+body{
+	font-family: helvetica, sans-serif;
+}
+
+span.hide_error{
+	visibility: hidden;
+}
+
+span.show_error{
+	color: red;
+}
+#adviceBox{
+	position: absolute;
+	left: 40px;
+	top: 0px;
+	margin: 20px;
+	padding: 12px;
+}
