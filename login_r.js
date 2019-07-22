@@ -1,3 +1,9 @@
 var u = document.getElementById("username");
-u.addEventListener("mouseover",validateNotEmpty,false);
-u.addEventListener("mouseout",validateNotEmpty2,false);
+// console.log(u);
+u.addEventListener("mouseover",validateNotEmpty);
+u.addEventListener("mouseout",validateNotEmpty2);
+
+var p = document.getElementById("password");
+p.addEventListener("mouseover",validateNotEmpty);
+p.addEventListener("mouseout",validateNotEmpty2);
+
