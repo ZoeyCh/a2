@@ -8,7 +8,7 @@
 	<h3>
   Enter your name and phone number:
 </h3>
-<form action="">
+<!-- <form action=""> -->
   <table>
     <tr>
       <td class="label">name: </td>
@@ -22,16 +22,22 @@
     </tr>
     <tr>
       <td class="label"></td>
-      <td class="field"><input type="submit" value="Next" name="submit" id="submit" />
+      <!-- <td class="field"><input type="submit" value="Next" name="submit" id="submit" /></td> -->
+      <td class="field"><button onclick="vTrue()">Next</button></td>
     </tr>
   </table>
-</form>
+<!-- </form> -->
 		<script>
-			function vTrue(event){
+			function vTrue(){
+              console.log("vTrue");
               var elements = event.currentTarget;
 
-              var name = elements[0].value;
-              var phone = elements[1].value;
+              <!-- var name = elements[0].value; -->
+              var name = document.getElementById("name").value;
+              console.log(name);
+              <!-- var phone = elements[1].value; -->
+              var phone = document.getElementById("phone").value;
+              console.log(phone);
 
               var result = true;
 
