@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h3>
+  Enter your name and phone number:
+</h3>
+<form action="">
+  <table>
+    <tr>
+      <td class="label">name: </td>
+      <td class="field"><input type="text" name="name" id="name" /></td>
+      <td class="instructions">format: Last, First, Initial</td>
+    </tr>
+    <tr>
+      <td class="label">phone number: </td>
+      <td class="field"><input type="text" name="phone" id="phone" />
+        <td class="instructions">format: 555-555-5555 or (555)555-5555</td>
+    </tr>
+    <tr>
+      <td class="label"></td>
+      <td class="field"><input type="submit" value="Next" name="submit" id="submit" />
+    </tr>
+  </table>
+</form>
+		<script>
+			function vTrue(event){
+              var elements = event.currentTarget;
+
+              var name = elements[0].value;
+              var phone = elements[1].value;
+
+              var result = true;
+
+              var name_v=/^[A-Z][a-z]+, ?[A-Z][a-z]+, ?[A-Z][a-z]+\.?$/;
+              var phone_v=/^(\(\d{3}\)|\d{3}-)\d{3}-\d{4}$/;
+
+              if(name == null||name == ""||name_v.test(name) == false){
+                     alert("Invalid name !");
+                     result = false;
+              }
+
+              if(phone == null||phone == ""||phone_v.test(phone) == false)
+              {
+              	 alert("Invalid phone number !");
+              	 result = false;
+              }
+               if(result = false){
+               	event.preventDefault();
+               }
+
+			}
+		</script>
+</body>
+</html>
