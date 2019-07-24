@@ -1,9 +1,10 @@
 function LogInForm(event){
 	
-	var elements = event.currentTarget;
-
-	var e = elements[0].value;
-	var p = elements[1].value;
+	var e = document.getElementById("login").value;
+	var p = document.getElementById("pswd").value;
+    
+    console.log(e);
+    console.log(p);
 	
 	var result = true;
 	
